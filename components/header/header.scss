@@ -1,12 +1,12 @@
 .header {
   $self: &;
-  @include flex-row;
+  display: flex;
   justify-content: space-between;
   padding-top: 3.5rem;
   &__logo {
     @include flex-column;
     @include font-basic;
-    @include font-l;
+    font-weight: 700;
     gap: 0.63rem;
     font-size: 1.125rem;
     color: var(--text-primary);
@@ -18,7 +18,7 @@
   }
   &__menu {
     @include font-basic;
-    @include font-s;
+    font-weight: 500;
     font-size: 1.5rem;
     gap: 1.56rem;
   }
@@ -65,6 +65,3 @@
     }
   }
 }
-// .header__link:hover ~ .header__control {
-//   visibility: visible;
-// }

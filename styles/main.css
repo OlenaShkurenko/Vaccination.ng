@@ -1,5 +1,12 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap";
 @import "../../styles/reset.css";
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
 .button {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -48,10 +55,6 @@
 }
 .button__icon:hover {
   transform: rotate(270deg) scale(1.25);
-}
-
-html {
-  background-color: var(--dark-bg);
 }
 
 .input {
@@ -178,7 +181,6 @@ html {
 }
 .header__link:hover ~ .header__control {
   visibility: visible;
-  background-color: red;
 }
 .header__menu, .header__button {
   display: none;
@@ -230,11 +232,4 @@ html {
   --dark-bg: #0b153c;
   --error: red;
   --transparent-bg: rgba(196, 196, 196, 0.15);
-}
-
-body,
-html {
-  width: 100%;
-  height: 100%;
-  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */

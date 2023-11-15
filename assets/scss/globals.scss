@@ -1,35 +1,6 @@
-@mixin flex-row {
-  display: flex;
-}
-
-@mixin flex-column {
-  display: flex;
-  flex-direction: column;
-}
-@mixin font-basic {
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: normal;
-}
-@mixin font-xs {
-  font-weight: 400;
-}
-@mixin font-s {
-  font-weight: 500;
-}
-@mixin font-m {
-  font-weight: 600;
-}
-@mixin font-l {
-  font-weight: 700;
-}
-@mixin font-xl {
-  font-weight: 800;
-}
-@mixin button-transparent-shadow {
-  background-color: rgba(196, 196, 196, 0.1);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-@mixin basic-transition {
-  transition: 0.3s;
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
 }

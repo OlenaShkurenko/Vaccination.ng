@@ -1,9 +1,6 @@
-html {
-  background-color: var(--dark-bg);
-}
 .input {
   @include font-basic;
-  @include font-s;
+  font-weight: 500;
   border-radius: 1.25rem;
   background: rgba(196, 196, 196, 0.1);
   padding: 1.25rem 1.6rem;
