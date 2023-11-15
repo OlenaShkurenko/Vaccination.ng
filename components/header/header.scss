@@ -1,0 +1,70 @@
+.header {
+  $self: &;
+  @include flex-row;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+  &__logo {
+    @include flex-column;
+    @include font-basic;
+    @include font-l;
+    gap: 0.63rem;
+    font-size: 1.125rem;
+    color: var(--text-primary);
+  }
+  &__underline {
+    width: 55%;
+    border: 0.1rem solid var(--main-accent);
+    border-radius: 0.1rem;
+  }
+  &__menu {
+    @include font-basic;
+    @include font-s;
+    font-size: 1.5rem;
+    gap: 1.56rem;
+  }
+  &__group {
+    @include flex-column;
+    gap: 0.63rem;
+  }
+  &__control {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--main-accent);
+    position: relative;
+    left: 50%;
+    visibility: hidden;
+    transition: 0.1s;
+  }
+  &__link {
+    text-decoration: none;
+    color: var(--secondary-bg);
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: var(--text-primary);
+
+      ~ #{$self}__control {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__menu,
+  &__button {
+    display: none;
+  }
+  &__burger {
+    width: 2.8125rem;
+    height: 2.8125rem;
+  }
+  @media (min-width: 1024px) {
+    &__menu,
+    &__button {
+      display: flex;
+    }
+  }
+}
+// .header__link:hover ~ .header__control {
+//   visibility: visible;
+// }

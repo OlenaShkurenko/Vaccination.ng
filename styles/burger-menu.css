@@ -1,0 +1,17 @@
+.burger__logo {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  background-color: var(--transparent-bg);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.burger__line {
+  border: 0.1rem solid var(--text-primary);
+  border-radius: 0.1rem;
+  width: 50%;
+}
+.burger__line_small {
+  width: 40%;
+}/*# sourceMappingURL=burger-menu.css.map */

@@ -1,0 +1,48 @@
+.button {
+  @include font-basic;
+  @include font-l;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  padding: 1.25rem 1.56rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  border-style: none;
+
+  &_primary {
+    @include button-transparent-shadow;
+    transition: 0.5s;
+    color: var(--main-accent);
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid var(--main-accent);
+    }
+  }
+  &_action {
+    background-color: var(--main-accent);
+    transition: 0.5s;
+    &:hover {
+      background-color: darken(#17c2ec, 10%);
+    }
+  }
+  &_send {
+    border-radius: 1.875rem 1.875rem 0rem 0rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    background-color: var(--dark-bg);
+    transform: rotate(90deg);
+    padding: 1.06rem 1.88rem 1.13rem 1.88rem;
+    height: 6.25rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: scale(1) rotate(270deg);
+    transition: 0.3s;
+
+    &:hover {
+      transform: rotate(270deg) scale(1.25);
+    }
+  }
+}

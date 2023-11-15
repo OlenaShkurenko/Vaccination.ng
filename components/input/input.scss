@@ -1,0 +1,55 @@
+html {
+  background-color: var(--dark-bg);
+}
+.input {
+  @include font-basic;
+  @include font-s;
+  border-radius: 1.25rem;
+  background: rgba(196, 196, 196, 0.1);
+  padding: 1.25rem 1.6rem;
+  border-style: none;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--secondary-bg);
+  &::placeholder {
+    color: var(--secondary-bg);
+  }
+
+  &_disabled {
+    background-color: var(--secondary-bg);
+    pointer-events: none;
+  }
+  &_error {
+    border: 3px solid var(--error);
+
+    &:hover {
+      border: 3px solid var(--error);
+    }
+  }
+  &_success {
+    border: 3px solid var(--main-accent);
+    &:hover {
+      border: 3px solid var(--main-accent);
+    }
+  }
+  &_quote {
+    background-color: var(--text-primary);
+    border: 3px solid var(--main-accent);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 1.78rem 2.5rem;
+    color: var(--input-text);
+    font-size: 1.25rem;
+    &::placeholder {
+      color: var(--input-text);
+    }
+  }
+  &_form {
+    background-color: var(--secondary-bg);
+    border: 3px solid transparent;
+  }
+  &:hover {
+    border: 3px solid var(--main-accent);
+  }
+}
