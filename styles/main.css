@@ -7,6 +7,18 @@ html {
   font-size: 16px;
 }
 
+:root {
+  --text-primary: #fff;
+  --text-secondary: #000;
+  --main-accent: #17c2ec;
+  --secondary-bg: rgba(255, 255, 255, 0.5);
+  --input-bg: rgba(11, 21, 60, 0.15);
+  --input-text: rgba(0, 0, 0, 0.25);
+  --dark-bg: #0b153c;
+  --error: red;
+  --transparent-bg: rgba(196, 196, 196, 0.15);
+}
+
 .button {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -120,12 +132,6 @@ html {
   background-color: var(--dark-bg);
 }
 
-.page {
-  padding: 0rem 2.19rem 0rem 2.19rem;
-  display: flex;
-  flex-direction: column;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -194,6 +200,11 @@ html {
     display: flex;
   }
 }
+@media (min-width: 1024px) {
+  .header__logo-text {
+    font-size: 2rem;
+  }
+}
 
 .burger__logo {
   display: flex;
@@ -222,14 +233,8 @@ html {
   }
 }
 
-:root {
-  --text-primary: #fff;
-  --text-secondary: #000;
-  --main-accent: #17c2ec;
-  --secondary-bg: rgba(255, 255, 255, 0.5);
-  --input-bg: rgba(11, 21, 60, 0.15);
-  --input-text: rgba(0, 0, 0, 0.25);
-  --dark-bg: #0b153c;
-  --error: red;
-  --transparent-bg: rgba(196, 196, 196, 0.15);
+.container {
+  padding: 0rem 2.19rem 0rem 2.19rem;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */

@@ -64,4 +64,9 @@
       display: flex;
     }
   }
+  @media (min-width: 1024px) {
+    &__logo {
+      font-size: 2rem;
+    }
+  }
 }
