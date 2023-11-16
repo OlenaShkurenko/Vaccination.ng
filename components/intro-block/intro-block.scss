@@ -1,3 +1,117 @@
 .intro-block {
   background-color: var(--dark-bg);
+  flex-grow: 1;
+  @media (min-width: 1024px) {
+    background-image: url(../../assets/images/unsplash_SfDofjXtxHE.png);
+    background-size: cover;
+  }
+  @media (min-width: 1024px) {
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 3.12rem;
+    }
+  }
+
+  &__text-block {
+    @include flex-column;
+    gap: 1.25rem;
+    @media (min-width: 768px) {
+      gap: 2.5rem;
+    }
+  }
+
+  &__text {
+    @include font-basic;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--text-alternate);
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+  &_accent {
+    color: var(--main-accent);
+  }
+  &_first-sign {
+    font-size: 0.75rem;
+    @media (min-width: 768px) {
+      font-size: 1.12rem;
+    }
+  }
+  &__label {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 800;
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 3rem;
+    }
+  }
+  &__button-group {
+    display: inline-flex;
+    gap: 1.25rem;
+    padding-top: 1.25rem;
+  }
+  &__pic {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4.37rem;
+    padding-top: 3.12rem;
+    @media (min-width: 768px) {
+      padding-top: 3.44rem;
+    }
+    @media (min-width: 1024px) {
+      padding-top: 0;
+      padding-left: 7.75rem;
+    }
+  }
+  &__appointment {
+    @include flex-column;
+    gap: 2rem;
+  }
+  &__schedule-link {
+    display: flex;
+    gap: 0.63rem;
+    align-items: center;
+    @media (min-width: 768px) {
+      gap: 1.25rem;
+    }
+  }
+  &__schedule-icon {
+    width: 1.87rem;
+    height: 1.87rem;
+    border-radius: 0.625rem;
+    background-color: var(--transparent-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 768px) {
+      width: 3.12rem;
+      height: 3.12rem;
+    }
+  }
+  &__icon-time {
+    width: 1.25em;
+    height: 1.25rem;
+    @media (min-width: 768px) {
+      width: 1.87rem;
+      height: 1.87rem;
+    }
+  }
+  &__schedule-text {
+    @include font-basic;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-primary);
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
 }

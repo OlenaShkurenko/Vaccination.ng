@@ -1,21 +1,24 @@
 .button {
   @include font-basic;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 0.875rem;
   color: var(--text-primary);
-  padding: 1.25rem 1.56rem;
+  padding: 1.25rem 1.62rem;
   border-radius: 1.25rem;
   cursor: pointer;
   border-style: none;
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
 
   &_primary {
     background-color: rgba(196, 196, 196, 0.1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transition: 0.5s;
     color: var(--main-accent);
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     &:hover {
-      border: 2px solid var(--main-accent);
+      border: 1px solid var(--main-accent);
     }
   }
   &_action {

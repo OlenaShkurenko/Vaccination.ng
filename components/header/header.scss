@@ -2,7 +2,9 @@
   $self: &;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 3.5rem;
+  padding-bottom: 2rem;
   &__logo {
     @include flex-column;
     @include font-basic;
@@ -10,6 +12,12 @@
     gap: 0.63rem;
     font-size: 1.125rem;
     color: var(--text-primary);
+    @media (min-width: 768px) {
+      font-size: 1.94rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 2rem;
+    }
   }
   &__underline {
     width: 55%;
@@ -53,20 +61,15 @@
   &__menu,
   &__button {
     display: none;
+    @media (min-width: 1024px) {
+      display: flex;
+    }
   }
   &__burger {
     width: 2.8125rem;
     height: 2.8125rem;
-  }
-  @media (min-width: 1024px) {
-    &__menu,
-    &__button {
-      display: flex;
-    }
-  }
-  @media (min-width: 1024px) {
-    &__logo {
-      font-size: 2rem;
+    @media (min-width: 1024px) {
+      display: none;
     }
   }
 }
