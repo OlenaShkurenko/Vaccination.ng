@@ -397,7 +397,7 @@ html {
 }
 
 .container {
-  padding: 0rem 2.19rem 0rem 2.19rem;
+  padding: 0rem 2.19rem;
   display: flex;
   flex-direction: column;
 }
