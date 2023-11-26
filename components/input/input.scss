@@ -1,33 +1,37 @@
 .input {
   @include font-basic;
   font-weight: 500;
-  border-radius: 1.25rem;
-  background: rgba(196, 196, 196, 0.1);
-  padding: 1.25rem 1.6rem;
+  border-radius: 0.6rem;
+  background: var(--transparent-bg);
+  padding: 1rem;
   border-style: none;
   transition: 0.3s;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
+  border: 1px solid transparent;
+
   cursor: pointer;
   color: var(--secondary-bg);
   &::placeholder {
     color: var(--secondary-bg);
   }
-
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
   &_disabled {
     background-color: var(--secondary-bg);
     pointer-events: none;
   }
   &_error {
-    border: 3px solid var(--error);
+    border: 1px solid var(--error);
 
     &:hover {
-      border: 3px solid var(--error);
+      border: 1px solid var(--error);
     }
   }
   &_success {
-    border: 3px solid var(--main-accent);
+    border: 1px solid var(--main-accent);
     &:hover {
-      border: 3px solid var(--main-accent);
+      border: 1px solid var(--main-accent);
     }
   }
   &_quote {
@@ -47,6 +51,6 @@
     border: 3px solid transparent;
   }
   &:hover {
-    border: 3px solid var(--main-accent);
+    border: 1px solid var(--main-accent);
   }
 }

@@ -19,6 +19,7 @@ html {
   --transparent-bg: rgba(196, 196, 196, 0.1);
   --text-alternate: rgba(255, 255, 255, 0.7);
   --transparent-bg2: rgba(196, 196, 196, 0.5);
+  --transparent-bg3: rgba(196, 196, 196, 0.05);
 }
 
 .button {
@@ -32,10 +33,12 @@ html {
   border-radius: 1.25rem;
   cursor: pointer;
   border-style: none;
+  width: 9.375rem;
 }
 @media (min-width: 768px) {
   .button {
     font-size: 1.25rem;
+    width: 10.7rem;
   }
 }
 .button_primary {
@@ -81,12 +84,13 @@ html {
   font-style: normal;
   line-height: normal;
   font-weight: 500;
-  border-radius: 1.25rem;
-  background: rgba(196, 196, 196, 0.1);
-  padding: 1.25rem 1.6rem;
+  border-radius: 0.6rem;
+  background: var(--transparent-bg);
+  padding: 1rem;
   border-style: none;
   transition: 0.3s;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
+  border: 1px solid transparent;
   cursor: pointer;
   color: var(--secondary-bg);
 }
@@ -96,21 +100,26 @@ html {
 .input::placeholder {
   color: var(--secondary-bg);
 }
+@media (min-width: 1024px) {
+  .input {
+    width: 100%;
+  }
+}
 .input_disabled {
   background-color: var(--secondary-bg);
   pointer-events: none;
 }
 .input_error {
-  border: 3px solid var(--error);
+  border: 1px solid var(--error);
 }
 .input_error:hover {
-  border: 3px solid var(--error);
+  border: 1px solid var(--error);
 }
 .input_success {
-  border: 3px solid var(--main-accent);
+  border: 1px solid var(--main-accent);
 }
 .input_success:hover {
-  border: 3px solid var(--main-accent);
+  border: 1px solid var(--main-accent);
 }
 .input_quote {
   background-color: var(--text-primary);
@@ -132,7 +141,7 @@ html {
   border: 3px solid transparent;
 }
 .input:hover {
-  border: 3px solid var(--main-accent);
+  border: 1px solid var(--main-accent);
 }
 
 .intro-block {
@@ -606,4 +615,113 @@ html {
 }
 .logo-block__img {
   width: 100%;
+}
+
+.result-block {
+  background-image: url(../../assets/images/resultblockmobile.png);
+  background-size: cover;
+  padding-top: 5.25rem;
+}
+@media (min-width: 768px) {
+  .result-block {
+    padding-top: 3.56rem;
+  }
+}
+@media (min-width: 1024px) {
+  .result-block {
+    padding-top: 3.9rem;
+    background-image: url(../../assets/images/resultblockdesktop.png);
+  }
+}
+.result-block__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.result-block__form-header {
+  background-color: var(--transparent-bg);
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  padding: 0.9rem 1.9rem;
+}
+@media (min-width: 768px) {
+  .result-block__form-header {
+    padding-inline: 6.12rem;
+  }
+}
+@media (min-width: 1024px) {
+  .result-block__form-header {
+    padding-inline: 5.18rem;
+  }
+}
+.result-block__text {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  color: var(--text-primary);
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .result-block__text {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .result-block__text {
+    font-size: 1.5rem;
+  }
+}
+.result-block__form-main {
+  background: var(--transparent-bg3);
+  padding: 1.3rem 0.8rem 3.8rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+@media (min-width: 768px) {
+  .result-block__form-main {
+    padding: 2.5rem 6.8rem 4rem 6.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .result-block__form-main {
+    flex-direction: row;
+    padding: 2.19rem 5.8rem;
+    justify-content: space-between;
+  }
+}
+.result-block__form-footer {
+  background: var(--transparent-bg3);
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  padding-bottom: 2rem;
+  padding-inline: 0.8rem;
+}
+@media (min-width: 768px) {
+  .result-block__form-footer {
+    padding-inline: 3.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .result-block__form-footer {
+    padding-inline: 5.8rem;
+  }
+}
+.result-block__text_active {
+  display: block;
+  color: var(--main-accent);
+  text-align: center;
+  padding: 0.8rem;
+  background-color: var(--transparent-bg);
+  border-radius: 0.6rem;
+}
+.result-block__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--main-accent);
+  transition: 0.3s;
+}
+.result-block__link:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
