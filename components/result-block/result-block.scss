@@ -67,17 +67,13 @@
       padding-inline: 5.8rem;
     }
   }
-  &__text_active {
+  &__text-active {
     display: block;
     color: var(--main-accent);
     text-align: center;
     padding: 0.8rem;
     background-color: var(--transparent-bg);
     border-radius: 0.6rem;
-    @media (min-width: 768px) {
-    }
-    @media (min-width: 1024px) {
-    }
   }
   &__link {
     text-decoration: none;
