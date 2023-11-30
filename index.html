@@ -8,7 +8,7 @@
     <title>Vaccination.ng</title>
   </head>
   <body>
-    <div class="page intro-block">
+    <div class="container intro-block">
       <header class="header">
         <div class="header__logo">
           <h3 class="header__logo-text">Vaccination.ng</h3>
@@ -32,7 +32,9 @@
             <div class="header__control"></div>
           </div>
         </div>
-        <div class="header__button"></div>
+        <div class="header__button">
+          <button class="button button_primary">Check status</button>
+        </div>
         <div class="header__burger">
           <div class="burger">
             <div class="burger__logo">
@@ -44,14 +46,167 @@
           </div>
         </div>
       </header>
-      <div class="intro-block__main"></div>
-      <div class="intro-block__appointment"></div>
+      <div class="intro-block__main">
+        <div class="intro-block__text-block">
+          <p
+            class="intro-block__text intro-block_accent intro-block_first-sign"
+          >
+            Get Vaccinated. Boost your Immune System
+          </p>
+          <h1 class="intro-block__text intro-block__label">
+            COVID-19 Vaccination Got Easier With,
+
+            <span
+              class="intro-block__text intro-block__label intro-block_accent"
+            >
+              Vaccination.ng
+            </span>
+          </h1>
+          <p class="intro-block__text">
+            Vaccination.ng will help you find the nearest centre for
+            vaccination, in all 36 states in Nigeria.
+          </p>
+          <div class="intro-block__button-group">
+            <button class="button button_primary">Help centre</button>
+            <button class="button button_action">Get vaccine</button>
+          </div>
+        </div>
+
+        <div class="intro-block__pic">
+          <div class="vaccine-card">
+            <div class="vaccine-card__bg">
+              <img
+                class="vaccine-card__img"
+                src="../../assets/images/unsplash_wnSEwHMhxho.png"
+                alt="vaccine ampule COVID-19"
+              />
+            </div>
+            <div class="vaccine-card__logo vaccine-card_left">
+              <img
+                class="vaccine-card__img vaccine-card_small"
+                src="../../assets/images/Group 17.png"
+                alt="doctor taking safety measures"
+              />
+            </div>
+            <div class="vaccine-card__logo vaccine-card_rigth">
+              <img
+                class="vaccine-card__img vaccine-card_small"
+                src="../../assets/images/Group 18.png"
+                alt="doctor taking safety measures"
+              />
+            </div>
+            <div class="vaccine-card__card">
+              <img
+                class="vaccine-card__img"
+                src="../../assets/images/Group 21.png"
+                alt="doctor taking safety measures"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="intro-block__appointment">
+        <div class="intro-block__schedule-link">
+          <div class="intro-block__schedule-icon">
+            <svg class="intro-block__icon-time">
+              <use href="assets/images/icon-sprite.svg#clock"></use>
+            </svg>
+          </div>
+          <a class="intro-block__schedule-text" href="#"
+            >Schedule your Vaccination</a
+          >
+        </div>
+        <div class="intro-block__schedule-form">
+          <div class="schedule-form">
+            <div class="schedule-form__cell">
+              <div class="schedule-form__icon">
+                <svg class="schedule-form__icon-icon">
+                  <use href="assets/images/icon-sprite.svg#map-in"></use>
+                </svg>
+              </div>
+              <div class="schedule-form__info">
+                <p class="schedule-form__label">Location</p>
+                <p class="schedule-form__text">Ikeja Lagos, Nigeria</p>
+              </div>
+            </div>
+            <div class="schedule-form__cell">
+              <div class="schedule-form__icon">
+                <svg class="schedule-form__icon-icon">
+                  <use href="assets/images/icon-sprite.svg#calendar"></use>
+                </svg>
+              </div>
+              <div class="schedule-form__info">
+                <p class="schedule-form__label">Date</p>
+                <p class="schedule-form__text">11 November, 2023</p>
+              </div>
+            </div>
+            <div class="schedule-form__cell">
+              <div class="schedule-form__icon">
+                <svg class="schedule-form__icon-icon">
+                  <use href="assets/images/icon-sprite.svg#shield"></use>
+                </svg>
+              </div>
+              <div class="schedule-form__info">
+                <p class="schedule-form__label">Vaccine Type</p>
+                <p class="schedule-form__text">Moderna</p>
+              </div>
+            </div>
+            <div class="schedule_cell">
+              <button class="button button_action">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="page page__2"></div>
-    <div class="page page__3"></div>
-    <div class="page page__4"></div>
-    <div class="page page__5"></div>
-    <div class="page page__6"></div>
-    <div class="page page__7"></div>
+
+    <div class="container logo-block">
+      <div class="logo-block__wrap">
+        <img
+          class="logo-block__img"
+          src="assets/images/moderna.png"
+          alt="vaccination company logo"
+        />
+      </div>
+      <div class="logo-block__wrap">
+        <img
+          class="logo-block__img"
+          src="assets/images/pfizer.png"
+          alt="vaccination company logo"
+        />
+      </div>
+      <div class="logo-block__wrap">
+        <img
+          class="logo-block__img"
+          src="assets/images/astrazeneca.png"
+          alt="vaccination company logo"
+        />
+      </div>
+      <div class="logo-block__wrap">
+        <img
+          class="logo-block__img"
+          src="assets/images/sinovac.png"
+          alt="vaccination company logo"
+        />
+      </div>
+    </div>
+    <div class="container result-block">
+      <div class="result-block__form">
+        <div class="result-block__form-header">
+          <p class="result-block__text">Check your COVID-19 result on our Database</p>
+        </div>
+        <div class="result-block__form-main">
+          <input class="input" type="text" placeholder="surname" />
+          <input class="input" type="text" placeholder="NIK Number" />
+          <button class="button button_primary">Check</button>
+        </div>
+        <div class="result-block__form-footer">
+          <p class="result-block__text result-block__text-active">Need a certificate for your COVID-19 result? Please click <a href="#" class="result-block__link">here</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="block__4"></div>
+    <div class="block__5"></div>
+    <div class="block__6"></div>
+    <div class="block__7"></div>
   </body>
 </html>

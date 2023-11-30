@@ -1,15 +1,23 @@
 .header {
   $self: &;
-  @include flex-row;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 3.5rem;
+  padding-bottom: 2rem;
   &__logo {
     @include flex-column;
     @include font-basic;
-    @include font-l;
+    font-weight: 700;
     gap: 0.63rem;
     font-size: 1.125rem;
     color: var(--text-primary);
+    @media (min-width: 768px) {
+      font-size: 1.94rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 2rem;
+    }
   }
   &__underline {
     width: 55%;
@@ -18,7 +26,7 @@
   }
   &__menu {
     @include font-basic;
-    @include font-s;
+    font-weight: 500;
     font-size: 1.5rem;
     gap: 1.56rem;
   }
@@ -53,18 +61,15 @@
   &__menu,
   &__button {
     display: none;
+    @media (min-width: 1024px) {
+      display: flex;
+    }
   }
   &__burger {
     width: 2.8125rem;
     height: 2.8125rem;
-  }
-  @media (min-width: 1024px) {
-    &__menu,
-    &__button {
-      display: flex;
+    @media (min-width: 1024px) {
+      display: none;
     }
   }
 }
-// .header__link:hover ~ .header__control {
-//   visibility: visible;
-// }

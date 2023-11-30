@@ -1,0 +1,81 @@
+.schedule-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  background-color: var(--transparent-bg);
+  border-radius: 1.25rem 1.25rem 0rem 0rem;
+  border-top: 0, 69rem solid var(--transparent-bg2);
+  padding: 1.25rem 0.63rem 0.63rem 0.63rem;
+  gap: 0.87rem;
+
+  @media (min-width: 768px) {
+    padding: 2rem 2.25rem 2.87rem 0.75rem;
+    gap: 2rem;
+  }
+  @media (min-width: 1253px) {
+    padding: 2.5rem;
+    gap: 3.12rem;
+    align-items: center;
+    justify-items: center;
+  }
+  &__cell {
+    display: flex;
+    gap: 0.63rem;
+    @media (min-width: 768px) {
+      gap: 1.25rem;
+    }
+  }
+  &__icon {
+    width: 1.87rem;
+    height: 1.87rem;
+    border-radius: 0.625rem;
+    background-color: var(--transparent-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 768px) {
+      width: 3.12rem;
+      height: 3.12rem;
+    }
+  }
+  &__icon-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    @media (min-width: 768px) {
+      width: 1.87rem;
+      height: 1.87rem;
+    }
+  }
+  &__info {
+    @include flex-column;
+    @media (min-width: 768px) {
+      gap: 0.31rem;
+    }
+    @media (min-width: 1024px) {
+      gap: 0;
+    }
+  }
+  &__label {
+    @include font-basic;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--secondary-bg);
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__text {
+    @include font-basic;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+}

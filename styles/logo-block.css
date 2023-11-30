@@ -1,0 +1,27 @@
+.logo-block {
+  padding-top: 0.35rem;
+  padding-bottom: 0.25rem;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  gap: 0.76rem;
+}
+@media (min-width: 768px) {
+  .logo-block {
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+    gap: 1.55rem;
+  }
+}
+@media (min-width: 1024px) {
+  .logo-block {
+    padding-top: 1.32rem;
+    padding-bottom: 0.68rem;
+    gap: 3.01rem;
+  }
+}
+.logo-block__img {
+  width: 100%;
+}/*# sourceMappingURL=logo-block.css.map */

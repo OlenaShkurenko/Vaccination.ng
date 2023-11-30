@@ -1,3 +1,8 @@
 .intro-block {
   background-color: var(--dark-bg);
+}
+@media (min-width: 1024px) {
+  .intro-block {
+    background-image: url(../../assets/images/unsplash_SfDofjXtxHE.png);
+  }
 }/*# sourceMappingURL=intro-block.css.map */
