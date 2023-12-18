@@ -19,7 +19,8 @@
   .logo-block {
     padding-top: 1.32rem;
     padding-bottom: 0.68rem;
-    gap: 3.01rem;
+    gap: 4rem;
+    justify-content: center;
   }
 }
 .logo-block__img {

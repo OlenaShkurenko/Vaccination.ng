@@ -7,8 +7,9 @@
   --input-text: rgba(0, 0, 0, 0.25);
   --dark-bg: #0b153c;
   --error: red;
-  --transparent-bg: rgba(196, 196, 196, 0.1);
   --text-alternate: rgba(255, 255, 255, 0.7);
+  --transparent-bg: rgba(196, 196, 196, 0.1);
   --transparent-bg2: rgba(196, 196, 196, 0.5);
   --transparent-bg3: rgba(196, 196, 196, 0.05);
+  --transparent-bg4: rgba(196, 196, 196, 0.2);
 }/*# sourceMappingURL=variables.css.map */
