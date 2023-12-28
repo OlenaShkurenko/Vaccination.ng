@@ -21,6 +21,7 @@ html {
   --transparent-bg2: rgba(196, 196, 196, 0.5);
   --transparent-bg3: rgba(196, 196, 196, 0.05);
   --transparent-bg4: rgba(196, 196, 196, 0.2);
+  --input-text2: rgba(0, 0, 0, 0.5);
 }
 
 .button {
@@ -77,6 +78,12 @@ html {
 .button__icon:hover {
   transform: rotate(270deg) scale(1.25);
 }
+.button_get-vaccine {
+  margin-top: 2.5rem;
+}
+.button_small {
+  width: 9rem;
+}
 
 .input {
   font-family: Inter, sans-serif;
@@ -84,7 +91,7 @@ html {
   line-height: normal;
   font-weight: 500;
   border-radius: 0.6rem;
-  background: var(--transparent-bg);
+  background: var(--input-bg);
   padding: 1rem;
   border-style: none;
   transition: 0.3s;
@@ -99,9 +106,34 @@ html {
 .input::placeholder {
   color: var(--secondary-bg);
 }
+@media (min-width: 768px) {
+  .input {
+    padding: 1.44rem;
+  }
+}
 @media (min-width: 1024px) {
   .input {
     width: 100%;
+  }
+}
+.input_vaccine {
+  width: auto;
+}
+.input_vaccine::-moz-placeholder {
+  color: var(--input-text);
+}
+.input_vaccine::placeholder {
+  color: var(--input-text);
+}
+.input_medium::-moz-placeholder {
+  color: var(--input-text);
+}
+.input_medium::placeholder {
+  color: var(--input-text);
+}
+@media (min-width: 768px) {
+  .input_medium {
+    flex-grow: 1;
   }
 }
 .input_disabled {
@@ -1023,5 +1055,132 @@ html {
   .reason-card__arrow-icon {
     width: 1.87rem;
     height: 1.98rem;
+  }
+}
+
+.get-vaccine-block {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../assets/images/unsplash_Y4MKctPwIrw.png);
+  background-size: contain;
+}
+@media (min-width: 1024px) {
+  .get-vaccine-block {
+    background-image: url(../../assets/images/Group\ 39.png);
+    background-size: cover;
+    position: relative;
+  }
+}
+.get-vaccine-block__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .get-vaccine-block__card {
+    align-items: start;
+  }
+}
+@media (min-width: 1024px) {
+  .get-vaccine-block__card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+.get-vaccine-block__label {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  padding-top: 2.19rem;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 14.375rem;
+}
+@media (min-width: 768px) {
+  .get-vaccine-block__label {
+    font-size: 2.25rem;
+    padding-top: 2.5rem;
+    width: 36.625rem;
+  }
+}
+@media (min-width: 1024px) {
+  .get-vaccine-block__label {
+    width: 28rem;
+    font-size: 3rem;
+  }
+}
+.get-vaccine-block__img {
+  padding: 1.2rem 0 2.4rem 0;
+  width: 17.9rem;
+}
+@media (min-width: 768px) {
+  .get-vaccine-block__img {
+    padding: 2.5rem 0 4.4rem 0;
+    height: 34.375rem;
+    width: 23.75rem;
+  }
+}
+.get-vaccine-block__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 1024px) {
+  .get-vaccine-block__form {
+    width: 35rem;
+    position: absolute;
+    transform: translateY(12rem);
+  }
+}
+.get-vaccine-block__label-form {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.get-vaccine-block__text {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--input-text2);
+}
+.get-vaccine-block__link-group {
+  display: flex;
+  justify-content: space-between;
+}
+.get-vaccine-block__link {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  color: var(--input-text2);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.get-vaccine-block__link :hover {
+  text-decoration: underline;
+}
+.get-vaccine-block__link_action {
+  color: var(--main-accent);
+  font-weight: 700;
+}
+.get-vaccine-block__phone-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+@media (min-width: 768px) {
+  .get-vaccine-block__phone-input {
+    flex-direction: row;
+    gap: 3.12rem;
   }
 }/*# sourceMappingURL=main.css.map */
