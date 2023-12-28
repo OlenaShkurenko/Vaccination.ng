@@ -1,0 +1,12 @@
+.get-vaccine-block {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../assets/images/unsplash_Y4MKctPwIrw.png);
+  background-size: contain;
+}
+@media (min-width: 1024px) {
+  .get-vaccine-block {
+    background-image: url(../../assets/images/Group\ 39.png);
+    background-size: contain;
+  }
+}/*# sourceMappingURL=get-vaccine-block.css.map */

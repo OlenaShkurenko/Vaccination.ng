@@ -1,0 +1,104 @@
+.get-vaccine-block {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../assets/images/unsplash_Y4MKctPwIrw.png);
+  background-size: contain;
+  @media (min-width: 1024px) {
+    background-image: url(../../assets/images/Group\ 39.png);
+    background-size: cover;
+    position: relative;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      align-items: start;
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
+  }
+  &__label {
+    @include font-basic;
+    padding-top: 2.19rem;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 14.375rem;
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+      padding-top: 2.5rem;
+      width: 36.625rem;
+    }
+    @media (min-width: 1024px) {
+      width: 28rem;
+      font-size: 3rem;
+    }
+  }
+  &__img {
+    padding: 1.2rem 0 2.4rem 0;
+    width: 17.9rem;
+    @media (min-width: 768px) {
+      padding: 2.5rem 0 4.4rem 0;
+      height: 34.375rem;
+      width: 23.75rem;
+    }
+    @media (min-width: 1024px) {
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-bottom: 2.5rem;
+    @media (min-width: 1024px) {
+      width: 35rem;
+      position: absolute;
+      transform: translateY(12rem);
+    }
+  }
+  &__label-form {
+    @include font-basic;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    cursor: pointer;
+  }
+  &__text {
+    @include font-basic;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--input-text2);
+  }
+  &__link-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    @include font-basic;
+    color: var(--input-text2);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    :hover {
+      text-decoration: underline;
+    }
+  }
+  &__link_action {
+    color: var(--main-accent);
+    font-weight: 700;
+  }
+  &__phone-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 3.12rem;
+    }
+  }
+}
