@@ -22,6 +22,7 @@ html {
   --transparent-bg3: rgba(196, 196, 196, 0.05);
   --transparent-bg4: rgba(196, 196, 196, 0.2);
   --input-text2: rgba(0, 0, 0, 0.5);
+  --text3:color: rgba(0, 0, 0, 0.60);
 }
 
 .button {
@@ -1457,5 +1458,234 @@ html {
 @media (min-width: 1024px) {
   .symptom-card__text {
     font-size: 1.25rem;
+  }
+}
+
+.revieuw-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  background-color: var(--transparent-bg2);
+  border-radius: 0.85rem;
+  padding: 1.43rem 1.57rem 2.1rem 1.43rem;
+  max-width: 25rem;
+}
+@media (min-width: 768px) {
+  .revieuw-card {
+    gap: 2.5rem;
+    padding: 1.88rem 2.06rem 2.75rem 1.88rem;
+    border-radius: 1.25rem;
+  }
+}
+.revieuw-card_secondary {
+  background-color: var(--main-accent);
+  box-shadow: 0 2.5px 2.5px 0 var(--transparent-bg2);
+  color: var(--text-primary);
+}
+.revieuw-card__logo-block {
+  display: flex;
+  gap: 0.95rem;
+}
+@media (min-width: 768px) {
+  .revieuw-card__logo-block {
+    gap: 1.25rem;
+  }
+}
+.revieuw-card__logo {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+@media (min-width: 768px) {
+  .revieuw-card__logo {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+}
+.revieuw-card__logo-info {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.revieuw-card__logo-info__logo-info_secondary {
+  color: var(--text-primary);
+}
+.revieuw-card__name {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+@media (min-width: 768px) {
+  .revieuw-card__name {
+    font-size: 1.255rem;
+  }
+}
+@media (min-width: 1024px) {
+  .revieuw-card__name {
+    font-size: 1.5rem;
+  }
+}
+.revieuw-card__name_secondary {
+  color: var(--text-primary);
+}
+.revieuw-card__location {
+  font-size: 0.6rem;
+  color: var(--input-text2);
+}
+@media (min-width: 768px) {
+  .revieuw-card__location {
+    font-size: 0.875rem;
+  }
+}
+.revieuw-card__location_secondary {
+  color: var(--text-alternate);
+}
+.revieuw-card__description {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 0.76rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text3);
+}
+@media (min-width: 768px) {
+  .revieuw-card__description {
+    font-size: 1.125rem;
+  }
+}
+.revieuw-card__text-accent {
+  color: var(--main-accent);
+}
+.revieuw-card__text-accent_secondary {
+  color: var(--text-primary);
+}
+
+.revieuw-block {
+  background-image: url(../../assets/images/unsplash_Y4MKctPwIrw.png);
+  background-size: contain;
+}
+@media (min-width: 1024px) {
+  .revieuw-block {
+    background-image: url(../../assets/images/Group\ 39.png);
+    background-size: cover;
+  }
+}
+.revieuw-block__description {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  padding: 1.88rem 0 0.6rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .revieuw-block__description {
+    gap: 1.25rem;
+  }
+}
+.revieuw-block__label {
+  color: var(--main-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .revieuw-block__label {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .revieuw-block__label {
+    font-size: 1.5rem;
+  }
+}
+.revieuw-block__main {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+}
+@media (min-width: 768px) {
+  .revieuw-block__main {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .revieuw-block__main {
+    font-size: 3rem;
+  }
+}
+.revieuw-block__text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--input-text2);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .revieuw-block__text {
+    font-size: 1.125rem;
+    padding-bottom: 3.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .revieuw-block__text {
+    font-size: 1.5rem;
+    padding-bottom: 6.25rem;
+    width: 60rem;
+  }
+}
+.revieuw-block__ampule-back {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translateY(6rem);
+}
+@media (min-width: 768px) {
+  .revieuw-block__ampule-back {
+    transform: translateY(10rem);
+  }
+}
+@media (min-width: 1024px) {
+  .revieuw-block__ampule-back {
+    flex-direction: row;
+    gap: 9.31rem;
+  }
+}
+@media (min-width: 768px) {
+  .revieuw-block__ampule-img {
+    width: 10.86rem;
+    height: 17.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .revieuw-block__ampule-img {
+    width: 18.375rem;
+    height: 29.9rem;
+  }
+}
+.revieuw-block__revieuws {
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  align-items: center;
+  padding-bottom: 2.77rem;
+}
+@media (min-width: 768px) {
+  .revieuw-block__revieuws {
+    padding-bottom: 3.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .revieuw-block__revieuws {
+    flex-direction: row;
+    gap: 2.8rem;
+    justify-content: center;
+    padding-bottom: 6.6rem;
   }
 }/*# sourceMappingURL=main.css.map */

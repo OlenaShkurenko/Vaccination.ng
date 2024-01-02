@@ -1,0 +1,101 @@
+.revieuw-block {
+  background-image: url(../../assets/images/unsplash_Y4MKctPwIrw.png);
+  background-size: contain;
+
+  @media (min-width: 1024px) {
+    background-image: url(../../assets/images/Group\ 39.png);
+    background-size: cover;
+  }
+
+  &__description {
+    @include font-basic;
+    padding: 1.88rem 0 0.6rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+    align-items: center;
+    position: relative;
+    @media (min-width: 1024px) {
+      gap: 1.25rem;
+    }
+  }
+  &__label {
+    color: var(--main-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__main {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--input-text2);
+    text-align: center;
+    padding-bottom: 1rem;
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+      padding-bottom: 3.75rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+      padding-bottom: 6.25rem;
+      width: 60rem;
+    }
+  }
+  &__ampule-back {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateY(6rem);
+    @media (min-width: 768px) {
+      transform: translateY(10rem);
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 9.31rem;
+    }
+  }
+  &__ampule-img {
+    @media (min-width: 768px) {
+      width: 10.86rem;
+      height: 17.7rem;
+    }
+    @media (min-width: 1024px) {
+      width: 18.375rem;
+      height: 29.9rem;
+    }
+  }
+  &__revieuws {
+    display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
+    align-items: center;
+    padding-bottom: 2.77rem;
+    @media (min-width: 768px) {
+      padding-bottom: 3.7rem;
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 2.8rem;
+      justify-content: center;
+      padding-bottom: 6.6rem;
+    }
+  }
+}
