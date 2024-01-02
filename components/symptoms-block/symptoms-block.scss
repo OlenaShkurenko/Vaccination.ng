@@ -1,0 +1,140 @@
+.symptoms-block {
+  background-image: url(../../assets/images/symptoms-mobile.png);
+  background-size: cover;
+  @include font-basic;
+
+  @media (min-width: 768px) {
+    background-image: url(../../assets/images/symptoms-tablet.png);
+  }
+  @media (min-width: 1024px) {
+    background-image: url(../../assets/images/symptoms-desktop.png);
+  }
+  &__description {
+    padding: 1.56rem 0 1.88rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+    align-items: center;
+    @media (min-width: 1024px) {
+      gap: 1.25rem;
+    }
+  }
+
+  &__label {
+    color: var(--text-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__main {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 3rem;
+    }
+  }
+  &__main_accent {
+    color: var(--main-accent);
+  }
+  &__text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--secondary-bg);
+    text-align: center;
+    padding-bottom: 1.88rem;
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+      padding-bottom: 3.75rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+      padding-bottom: 11.19rem;
+    }
+  }
+  &__symptoms {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__img {
+    width: 13.9rem;
+    height: 10.44rem;
+    @media (min-width: 768px) {
+      width: 28.65rem;
+      height: 21.46rem;
+    }
+    @media (min-width: 1024px) {
+      width: 44.27rem;
+      height: 33.16rem;
+    }
+  }
+  &__symptom-card1 {
+    position: absolute;
+    transform: translate(-5rem, 0.8rem);
+    @media (min-width: 768px) {
+      transform: translate(-10rem, 1.7rem);
+    }
+    @media (min-width: 1024px) {
+      transform: translate(-17.5rem, 2.5rem);
+    }
+  }
+  &__symptom-card2 {
+    position: absolute;
+    transform: translate(-7rem, 3.7rem);
+    @media (min-width: 768px) {
+      transform: translate(-14rem, 7rem);
+    }
+    @media (min-width: 1024px) {
+      transform: translate(-23rem, 11rem);
+    }
+  }
+  &__symptom-card3 {
+    position: absolute;
+    transform: translate(-7.3rem, 6.4rem);
+    @media (min-width: 768px) {
+      transform: translate(-15rem, 13.5rem);
+    }
+    @media (min-width: 1024px) {
+      transform: translate(-23rem, 20rem);
+    }
+  }
+  &__symptom-card4 {
+    position: absolute;
+    transform: translate(5rem, 0.8rem);
+    @media (min-width: 768px) {
+      transform: translate(11.5rem, 1.7rem);
+    }
+    @media (min-width: 1024px) {
+      transform: translate(19rem, 2.5rem);
+    }
+  }
+  &__symptom-card5 {
+    position: absolute;
+    transform: translate(7.2rem, 3.7rem);
+    @media (min-width: 768px) {
+      transform: translate(14.5rem, 7rem);
+    }
+    @media (min-width: 1024px) {
+      transform: translate(23rem, 11rem);
+    }
+  }
+  &__symptom-card6 {
+    position: absolute;
+    transform: translate(8.2rem, 6.4rem);
+    @media (min-width: 768px) {
+      transform: translate(17rem, 13rem);
+    }
+    @media (min-width: 1024px) {
+      transform: translate(28rem, 21rem);
+    }
+  }
+}

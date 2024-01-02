@@ -3,10 +3,12 @@
   flex-direction: column;
   background-image: url(../../assets/images/unsplash_Y4MKctPwIrw.png);
   background-size: contain;
+
   @media (min-width: 1024px) {
     background-image: url(../../assets/images/Group\ 39.png);
     background-size: cover;
     position: relative;
+    height: 85%;
   }
   &__card {
     display: flex;
@@ -53,8 +55,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    padding-bottom: 2.5rem;
     @media (min-width: 1024px) {
+      gap: 1.56rem;
       width: 35rem;
       position: absolute;
       transform: translateY(12rem);
@@ -66,12 +68,21 @@
     font-weight: 700;
     color: var(--text-secondary);
     cursor: pointer;
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
   }
   &__text {
     @include font-basic;
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--input-text2);
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
   }
   &__link-group {
     display: flex;
@@ -87,6 +98,9 @@
     :hover {
       text-decoration: underline;
     }
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
   }
   &__link_action {
     color: var(--main-accent);
@@ -99,6 +113,9 @@
     @media (min-width: 768px) {
       flex-direction: row;
       gap: 3.12rem;
+    }
+    @media (min-width: 1024px) {
+      gap: 2.25rem;
     }
   }
 }
