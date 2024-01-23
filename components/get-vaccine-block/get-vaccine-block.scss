@@ -1,65 +1,59 @@
 .get-vaccine-block {
   display: flex;
   flex-direction: column;
-  background-image: url(../../assets/images/unsplash_Y4MKctPwIrw.png);
-  background-size: contain;
-
-  @media (min-width: 1024px) {
-    background-image: url(../../assets/images/Group\ 39.png);
-    background-size: cover;
-    position: relative;
-    height: 85%;
-  }
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   &__card {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    gap: 2rem;
     @media (min-width: 768px) {
-      align-items: start;
+      gap: 2rem;
     }
     @media (min-width: 1024px) {
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-between;
-      align-items: start;
     }
   }
   &__label {
     @include font-basic;
-    padding-top: 2.19rem;
     color: var(--text-secondary);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    width: 14.375rem;
+    padding-bottom: 1.25rem;
     @media (min-width: 768px) {
-      font-size: 2.25rem;
-      padding-top: 2.5rem;
-      width: 36.625rem;
+      padding-bottom: 2.5rem;
     }
     @media (min-width: 1024px) {
-      width: 28rem;
       font-size: 3rem;
+      display: none;
+    }
+    &_form {
+      display: none;
+      @media (min-width: 1024px) {
+        display: block;
+      }
     }
   }
   &__img {
-    padding: 1.2rem 0 2.4rem 0;
-    width: 17.9rem;
-    @media (min-width: 768px) {
-      padding: 2.5rem 0 4.4rem 0;
-      height: 34.375rem;
-      width: 23.75rem;
-    }
     @media (min-width: 1024px) {
+      width: 30%;
     }
+  }
+  &__pic {
+    width: 100%;
   }
   &__form {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+
     @media (min-width: 1024px) {
-      gap: 1.56rem;
-      width: 35rem;
-      position: absolute;
-      transform: translateY(12rem);
+      width: 50%;
     }
   }
   &__label-form {
@@ -78,15 +72,16 @@
   &__text {
     @include font-basic;
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 300;
     color: var(--input-text2);
     @media (min-width: 768px) {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   }
   &__link-group {
     display: flex;
-    justify-content: space-between;
+    gap: 3rem;
+    justify-content: center;
   }
   &__link {
     @include font-basic;
