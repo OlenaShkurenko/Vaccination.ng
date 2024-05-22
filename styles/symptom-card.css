@@ -1,0 +1,12 @@
+.symptom-card {
+  position: relative;
+}
+.symptom-card__img {
+  width: 2rem;
+  height: 2rem;
+}
+.symptom-card__img__text-block {
+  padding: 0.33rem 0.5rem;
+  border-radius: 0.3rem;
+  background-color: --transparent-bg4;
+}/*# sourceMappingURL=symptom-card.css.map */

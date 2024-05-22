@@ -2,20 +2,36 @@
   @include font-basic;
   font-weight: 500;
   border-radius: 0.6rem;
-  background: var(--transparent-bg);
+  background: var(--input-bg);
   padding: 1rem;
   border-style: none;
   transition: 0.3s;
   font-size: 0.75rem;
   border: 1px solid transparent;
-
   cursor: pointer;
-  color: var(--secondary-bg);
+  color: var(--text-primary);
   &::placeholder {
-    color: var(--secondary-bg);
+    color: var(--text-primary);
+  }
+  @media (min-width: 768px) {
+    padding: 1.44rem;
   }
   @media (min-width: 1024px) {
     width: 100%;
+  }
+  &_vaccine {
+    border: 1px solid var(--transparent-bg5);
+    &::placeholder {
+      color: var(--secondary-bg);
+    }
+  }
+  &_medium {
+    &::placeholder {
+      color: var(--text-primary);
+    }
+    @media (min-width: 768px) {
+      flex-grow: 1;
+    }
   }
   &_disabled {
     background-color: var(--secondary-bg);
@@ -24,24 +40,26 @@
   &_error {
     border: 1px solid var(--error);
 
-    &:hover {
+    &:focus {
       border: 1px solid var(--error);
     }
   }
   &_success {
     border: 1px solid var(--main-accent);
-    &:hover {
+    &active {
       border: 1px solid var(--main-accent);
     }
   }
   &_quote {
     background-color: var(--text-primary);
-    border: 3px solid var(--main-accent);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    padding: 1.78rem 2.5rem;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
     color: var(--input-text);
-    font-size: 1.25rem;
+    font-size: 0.625rem;
+    font-weight: 500;
+
     &::placeholder {
       color: var(--input-text);
     }
@@ -50,7 +68,7 @@
     background-color: var(--secondary-bg);
     border: 3px solid transparent;
   }
-  &:hover {
+  &:focus {
     border: 1px solid var(--main-accent);
   }
 }

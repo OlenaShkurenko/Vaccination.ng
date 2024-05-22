@@ -1,0 +1,20 @@
+.symptoms-block {
+  background-image: url(../../assets/images/symptoms-mobile.png);
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .symptoms-block {
+    background-image: url(../../assets/images/symptoms-tablet.png);
+  }
+}
+@media (min-width: 1024px) {
+  .symptoms-block {
+    background-image: url(../../assets/images/symptoms-desktop.png);
+  }
+}
+.symptoms-block__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  justify-content: center;
+}/*# sourceMappingURL=symptoms-block.css.map */

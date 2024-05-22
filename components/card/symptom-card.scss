@@ -1,0 +1,46 @@
+.symptom-card {
+  position: relative;
+  &__img {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    transform: translate(-0.5rem, -0.2rem);
+    @media (min-width: 768px) {
+      transform: translate(-1.2rem, -0.4rem);
+      width: 4rem;
+      height: 4rem;
+    }
+    @media (min-width: 1024px) {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  &__text-block {
+    padding: 0.33rem 0.5rem 0.33rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--transparent-bg4);
+    box-shadow: 0px 1.264px 1.264px 0px rgba(0, 0, 0, 0.25);
+    max-width: fit-content;
+    @media (min-width: 768px) {
+      padding: 0.7rem 1rem 0.7rem 3.06rem;
+      border-radius: 0.6rem;
+      box-shadow: 0px 2.4px 2.4px 0px rgba(0, 0, 0, 0.25);
+    }
+    @media (min-width: 1024px) {
+      padding: 1.44rem 3.8rem 1.44rem 8rem;
+    }
+  }
+  &__text {
+    @include font-basic;
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: var(--main-accent);
+    text-align: center;
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.25rem;
+    }
+  }
+}

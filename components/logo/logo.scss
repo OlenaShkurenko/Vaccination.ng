@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  @include font-basic;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  &::after {
+    content: "";
+    width: 40%;
+    height: 0.2rem;
+    background: var(--main-accent);
+    border-radius: 0.2rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+}

@@ -1,7 +1,12 @@
 .container {
-  padding-inline: 2.19rem;
+  padding-inline: 2.2rem;
   @include flex-column;
+  max-width: 1200px;
+  margin: auto;
   @media (min-width: 1024px) {
-    padding-right: 5.32rem;
+    padding-inline: 3.12rem;
+  }
+  @media (min-width: 1200px) {
+    padding-inline: 4.44rem;
   }
 }

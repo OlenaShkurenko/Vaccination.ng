@@ -1,0 +1,116 @@
+.get-vaccine-block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    gap: 2rem;
+    @media (min-width: 768px) {
+      gap: 2rem;
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+  &__label {
+    @include font-basic;
+    color: var(--text-secondary);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1.25rem;
+    @media (min-width: 768px) {
+      padding-bottom: 2.5rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 3rem;
+      display: none;
+    }
+    &_form {
+      display: none;
+      @media (min-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+  &__img {
+    @media (min-width: 1024px) {
+      width: 30%;
+    }
+  }
+  &__pic {
+    width: 100%;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+  }
+  &__label-form {
+    @include font-basic;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    cursor: pointer;
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__text {
+    @include font-basic;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--input-text2);
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+  &__link-group {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  &__link {
+    @include font-basic;
+    color: var(--input-text2);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    :hover {
+      text-decoration: underline;
+    }
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+  &__link_action {
+    color: var(--main-accent);
+    font-weight: 700;
+  }
+  &__phone-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 3.12rem;
+    }
+    @media (min-width: 1024px) {
+      gap: 2.25rem;
+    }
+  }
+}

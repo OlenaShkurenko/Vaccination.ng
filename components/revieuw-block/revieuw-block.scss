@@ -1,0 +1,67 @@
+.revieuw-block {
+  &__description {
+    @include font-basic;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+    align-items: center;
+    position: relative;
+    @media (min-width: 1024px) {
+      gap: 1.25rem;
+    }
+  }
+  &__label {
+    color: var(--main-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__main {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--input-text2);
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+
+      width: 60rem;
+    }
+  }
+  &__revieuws {
+    display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
+    align-items: center;
+    padding: 3rem 0 5rem 0;
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 2.8rem;
+      justify-content: center;
+    }
+  }
+}
